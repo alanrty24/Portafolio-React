@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+:root {
+  /* * Variables */
+  --color-font-p1: #03045e;
+  --color-font-p2: #0077b6;
+  --color-letters-title: #00b4d8;
+  --color-letters-name: #747171;
+  --color-letters-title-2: #242424;
+  --color-white: #ffffff;
+  --color-black: #000000;
+}
+
+body {
+  @apply w-screen grid-rows-3 overflow-x-hidden;
+}
