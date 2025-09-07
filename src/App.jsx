@@ -1,5 +1,6 @@
 import Navbar from "./Components/Navbar";
 import Presentation from "./Components/Presentation";
+import Aboutme from "./Components/Aboutme";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       </header>
       <main className="pt-17 grid-rows-4 md:pt-20 ">
         <Presentation />
+        <Aboutme />
       </main>
       <footer>footer</footer>
     </>

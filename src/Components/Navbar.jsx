@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="flex justify-between items-center text-2xl text-(--color-letters-title) ">
-        <h3 className="font-bold text-3xl text-shadow-2xs text-shadow-blue-200 md:text-4xl">
+        <h3 className="font-bold text-3xl text-shadow-2xs text-shadow-blue-200 md:text-4xl md:text-shadow-sm md:text-shadow-blue-200" >
           Alanrty24
         </h3>
         <svg
@@ -32,10 +32,20 @@ const Navbar = () => {
           id="listMenu"
           className="flex-col rounded-2xl hidden gap-2 right-1/8 text-white absolute top-3/4 bg-blue-400 p-4 transition-all delay-500 md:flex md:static md:flex-row md:bg-(--color-font-p1) md:gap-4 md:text-xl md:text-blue-300 "
         >
-          <li className="text-xl md:hover:border-solid md:hover:border-b-2 md:hover:border-amber-50 md:text-2xl">Inicio</li>
-          <li className="text-xl md:hover:border-solid md:hover:border-b-2 md:hover:border-amber-50 md:text-2xl">About Me</li>
-          <li className="text-xl md:hover:border-solid md:hover:border-b-2 md:hover:border-amber-50 md:text-2xl">My Projects</li>
-          <li className="text-xl md:hover:border-solid md:hover:border-b-2 md:hover:border-amber-50 md:text-2xl">Contact Me</li>
+          <li
+            className="text-xl hover:cursor-pointer md:hover:border-solid md:hover:border-b-2 md:hover:border-amber-50 md:text-2xl"
+          >
+            <a href="#init">Inicio</a>
+          </li>
+          <li className="text-xl hover:cursor-pointer md:hover:border-solid md:hover:border-b-2 md:hover:border-amber-50 md:text-2xl">
+            <a href="#aboutMe">About Me</a>
+          </li>
+          <li className="text-xl hover:cursor-pointer md:hover:border-solid md:hover:border-b-2 md:hover:border-amber-50 md:text-2xl">
+            <a href="#">My Projects</a>
+          </li>
+          <li className="text-xl hover:cursor-pointer md:hover:border-solid md:hover:border-b-2 md:hover:border-amber-50 md:text-2xl">
+            <a href="#">Contact Me</a>
+          </li>
         </ul>
       </nav>
     </>
