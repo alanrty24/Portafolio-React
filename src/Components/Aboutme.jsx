@@ -1,11 +1,11 @@
 const Aboutme = () => {
   return (
-    <section className="flex flex-col-reverse bg-linear-to-b from-85% from-(--color-font-p2)  p-4 md:px-8 lg:flex-row lg:px-16" id="aboutMe">
-      <div className="flex justify-center p-6 lg:w-1/2 lg:items-center">
+    <section className="flex flex-col-reverse bg-linear-to-b from-85% from-(--color-font-p2) to-(--color-font-p1)  p-4 md:px-8 lg:flex-row lg:px-16" id="aboutMe">
+      <div className="flex justify-center items-center p-6 lg:w-1/2 ">
         <img
           src="../../public/pgAboutMe.png"
           alt=""
-          className=" size-3/4 rounded-2xl shadow-[5px_5px_10px_white,10px_10px_10px_black] md:size-1/2 "
+          className=" size-3/4 rounded-2xl shadow-[6px_6px_10px_white,10px_10px_10px_black,11px_11px_0px_1px_black] md:size-1/2 xl:w-  2xl:w-1/2 2xl:h-3/4 "
         />
       </div>
       <div className="flex flex-col gap-2 py-4 lg:w-1/2">

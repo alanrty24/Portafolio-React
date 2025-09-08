@@ -1,8 +1,8 @@
 const Presentation = () => {
   return (
-    <section className="bg-linear-to-b from-85% from-(--color-font-p1) to-(--color-font-p2) text-white px-4 pb-4 flex flex-col md:px-8 lg:flex-row lg:py-4 xl:py-6">
+    <section className="bg-linear-to-b from-85% from-(--color-font-p1) to-(--color-font-p2) text-white px-4 pb-4 flex flex-col md:px-8 lg:flex-row lg:py-4 xl:py-6" id="init">
       <div className="contTitle py-4 flex flex-col gap-2 lg:w-1/2">
-        <h3 className="text-2xl font-bold text-(--color-letters-name) font-mono md:text-4xl" id="init">
+        <h3 className="text-2xl font-bold text-(--color-letters-name) font-mono md:text-4xl" >
           Alan Ruz
         </h3>
         <p className="text-4xl font-bold text-blue-300 text-shadow-2xs text-shadow-blue-50 md:text-6xl">

@@ -19,7 +19,7 @@ const Navbar = () => {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="size-10 font-bold hover:cursor-pointer md:hidden"
+          className="size-10 font-bold hover:cursor-pointer lg:hidden"
           onClick={handleClick}
         >
           <path
@@ -30,7 +30,7 @@ const Navbar = () => {
         </svg>
         <ul
           id="listMenu"
-          className="flex-col rounded-2xl hidden gap-2 right-1/8 text-white absolute top-3/4 bg-blue-400 p-4 transition-all delay-500 md:flex md:static md:flex-row md:bg-(--color-font-p1) md:gap-4 md:text-xl md:text-blue-300 "
+          className="flex-col rounded-2xl hidden gap-2 right-1/8 text-white absolute top-3/4 bg-blue-400 p-4 transition-all delay-500 lg:flex lg:static  lg:flex-row  lg:bg-(--color-font-p1)  lg:gap-4 md:text-xl  lg:text-blue-300 "
         >
           <li
             className="text-xl hover:cursor-pointer md:hover:border-solid md:hover:border-b-2 md:hover:border-amber-50 md:text-2xl"
@@ -39,6 +39,9 @@ const Navbar = () => {
           </li>
           <li className="text-xl hover:cursor-pointer md:hover:border-solid md:hover:border-b-2 md:hover:border-amber-50 md:text-2xl">
             <a href="#aboutMe">About Me</a>
+          </li>
+          <li className="text-xl hover:cursor-pointer md:hover:border-solid md:hover:border-b-2 md:hover:border-amber-50 md:text-2xl">
+            <a href="#mySkill">My Skills</a>
           </li>
           <li className="text-xl hover:cursor-pointer md:hover:border-solid md:hover:border-b-2 md:hover:border-amber-50 md:text-2xl">
             <a href="#">My Projects</a>
