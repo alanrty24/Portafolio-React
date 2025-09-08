@@ -1,14 +1,14 @@
 const Skills = () => {
   return (
     <section
-      className="bg-linear-to-b from-85% from-(--color-font-p1) p-4 flex flex-col"
+      className="bg-linear-to-b from-85% from-(--color-font-p1) to-(--color-font-p2) p-4 flex flex-col"
       id="mySkill"
     >
       <h3 className="text-4xl text-center font-bold text-blue-300 text-shadow-2xs text-shadow-blue-50 md:text-6xl">
         My Skills
       </h3>
       <div>
-        <ul className="grid grid-rows-4 grid-cols-2 justify-center p-6 gap-4 text-white md:py-8 lg:grid-rows-auto lg:grid-cols-3 lg:justify-center lg:gap-x-0 lg:p-12">
+        <ul className="grid grid-rows-4 grid-cols-2 justify-center p-6 gap-4 text-white md:py-8 lg:grid-rows-3 lg:grid-cols-3 lg:justify-center lg:gap-x-0 lg:p-12">
           <li className="flex flex-col items-center gap-2 p-2 trasition duration-500 hover:cursor-pointer hover:transition hover:-translate-y-1 md:">
             <i className="fa-brands fa-html5 icon text-6xl text-orange-500 md:text-9xl "></i>
             <h3 className="font-bold text-3xl">HTML</h3>
