@@ -2,13 +2,13 @@ const Presentation = () => {
   return (
     <section className="bg-linear-to-b from-85% from-(--color-font-p1) to-(--color-font-p2) text-white px-4 pb-4 flex flex-col md:px-8 lg:flex-row lg:py-4 xl:py-6" id="init">
       <div className="contTitle py-4 flex flex-col gap-2 lg:w-1/2">
-        <h3 className="text-2xl font-bold text-(--color-letters-name) font-mono md:text-4xl" >
+        <h3 className="text-2xl font-bold text-(--color-letters-name) font-mono md:text-2xl" >
           Alan Ruz
         </h3>
         <p className="text-4xl font-bold text-blue-300 text-shadow-2xs text-shadow-blue-50 md:text-6xl">
           FRONT END WEB DEVELOPER
         </p>
-        <p className="py-4 text-xl/8 text-justify indent-4 font-light md:text-3xl/11 ">
+        <p className="py-4 text-xl/8 text-justify indent-4 font-light md:text-xl/7 lg:text-xl/7 ">
           Mi objetivo como desarrollador front-end es utilizar mis conocimientos
           para optimizar y escalar cualquier sistema, ofreciendo soluciones
           financieras y productivas.
