@@ -2,15 +2,13 @@
 
 :root {
   /* * Variables */
-  --color-font-p1: #03045e;
-  --color-font-p2: #0077b6;
-  --color-letters-title: #00b4d8;
-  --color-letters-name: #747171;
-  --color-letters-title-2: #242424;
-  --color-white: #ffffff;
+  --color-primary: #E9F4FF;
+  --color-secudary: #002A83;
+  --color-tertiary: #007BFF;
   --color-black: #000000;
+  --color-white: #ffffff;
 }
 
 body {
-  @apply w-screen grid-rows-3 overflow-x-hidden;
+  @apply min-w-screen min-h-screen bg-(--color-primary) overflow-x-hidden;
 }

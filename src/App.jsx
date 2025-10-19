@@ -9,9 +9,8 @@ import Foot from "./Components/Foot";
 function App() {
   return (
     <>
-      <header className="p-4 bg-(--color-font-p1) fixed sm:w-full right-0 left-0 md:px-8">
+    <div className="">    
         <Navbar />
-      </header>
       <main className="pt-17 grid-rows-4 lg:pt-20 ">
         <Presentation />
         <Aboutme />
@@ -22,6 +21,7 @@ function App() {
       <footer className="p-4 bg-(--color-font-p1) text-white flex flex-col items-center">
         <Foot />
       </footer>
+    </div>
     </>
   );
 }

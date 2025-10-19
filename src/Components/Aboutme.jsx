@@ -1,6 +1,6 @@
 const Aboutme = () => {
   return (
-    <section className="flex flex-col-reverse bg-linear-to-b from-85% from-(--color-font-p2) to-(--color-font-p1)  p-4 md:px-8 lg:flex-row lg:px-16" id="aboutMe">
+    <section className="min-h-screen flex flex-col-reverse bg-linear-to-b from-85% from-(--color-font-p2) to-(--color-font-p1)  p-4 md:px-8 lg:flex-row lg:px-16" id="aboutMe">
       <div className="flex justify-center items-center p-6 lg:w-1/2 ">
         <img
           src="../../public/pgAboutMe.png"
