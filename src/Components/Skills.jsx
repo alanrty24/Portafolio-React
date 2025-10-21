@@ -1,42 +1,39 @@
+import { FaCss3, FaGitAlt, FaGithub, FaHtml5, FaReact } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { SiNextdotjs } from "react-icons/si";
+
 const Skills = () => {
+
+  const lenguajes = [
+    {name:"Html",color:"text-orange-500",icon:FaHtml5},
+    {name:"Css",color:"text-violet-500",icon:FaCss3},
+    {name:"Javascript",color:"text-amber-500",icon:IoLogoJavascript},
+    {name:"React",color:"text-blue-500",icon:FaReact},
+    {name:"Next.js",color:"text-black",icon:SiNextdotjs},
+    {name:"Git",color:"text-orange-600",icon:FaGitAlt},
+    {name:"Github",color:"text-gray-500",icon:FaGithub},
+  ]
+
   return (
     <section
-      className="bg-linear-to-b from-85% from-(--color-font-p1) to-(--color-font-p2) p-4 flex flex-col"
+      className="min-h-[50vh] flex flex-col justify-center items-center py-4 overflow-hidden"
       id="mySkill"
     >
-      <h3 className="text-4xl text-center font-bold text-blue-300 text-shadow-2xs text-shadow-blue-50 md:text-5xl">
+      <h3 className="text-4xl text-center font-bold text-blue-500 text-shadow-2xs text-shadow-blue-50  md:text-5xl">
         My Skills
       </h3>
       <div>
-        <ul className="grid grid-rows-4 grid-cols-2 justify-center p-6 gap-4 text-white md:py-8 lg:grid-rows-3 lg:grid-cols-3 lg:justify-center lg:gap-x-0 lg:p-12">
-          <li className="flex flex-col items-center gap-2 p-2 trasition duration-500 hover:cursor-pointer hover:transition hover:-translate-y-1 md:">
-            <i className="fa-brands fa-html5 icon text-6xl text-orange-500 md:text-9xl "></i>
-            <h3 className="font-bold text-3xl md:text-2xl">HTML</h3>
-          </li>
-          <li className="flex flex-col items-center gap-2 p-2 trasition duration-500 hover:cursor-pointer hover:transition hover:-translate-y-1 md:">
-            <i className="fa-brands fa-css3-alt icon text-6xl text-purple-600 md:text-9xl "></i>
-            <h3 className="font-bold text-3xl md:text-2xl">CSS</h3>
-          </li>
-          <li className="flex flex-col items-center gap-2 p-2 trasition duration-500 hover:cursor-pointer hover:transition hover:-translate-y-1 md:">
-            <i className="fa-brands fa-js icon text-6xl text-yellow-400 md:text-9xl "></i>
-            <h3 className="font-bold text-3xl md:text-2xl">JAVASCRIPT</h3>
-          </li>
-          <li className="flex flex-col items-center gap-2 p-2 trasition duration-500 hover:cursor-pointer hover:transition hover:-translate-y-1 md:">
-            <i className="fa-brands fa-react icon text-6xl text-blue-500 md:text-9xl "></i>
-            <h3 className="font-bold text-3xl md:text-2xl">REACT</h3>
-          </li>
-          <li className="flex flex-col items-center gap-2 p-2 trasition duration-500 hover:cursor-pointer hover:transition hover:-translate-y-1 md:">
-            <i className="fa-solid fa-code text-6xl text-black md:text-9xl "></i>
-            <h3 className="font-bold text-3xl md:text-2xl">NEXT.JS</h3>
-          </li>
-          <li className="flex flex-col items-center gap-2 p-2 trasition duration-500 hover:cursor-pointer hover:transition hover:-translate-y-1 md:">
-            <i className="fa-brands fa-git-alt icon text-6xl text-orange-600 md:text-9xl "></i>
-            <h3 className="font-bold text-3xl md:text-2xl">GIT</h3>
-          </li>
-          <li className="flex flex-col items-center gap-2 p-2 col-span-2 trasition duration-500 hover:cursor-pointer hover:transition hover:-translate-y-1 lg:col-span-3">
-            <i className="fa-brands fa-github icon text-6xl text-gray-500 md:text-9xl "></i>
-            <h3 className="font-bold  text-3xl md:text-2xl">GITHUB</h3>
-          </li>
+        <ul className="grid grid-rows-4 grid-cols-2 justify-center py-10 gap-4 text-black md:py-8  lg:flex ">
+          {
+            lenguajes.map(leg => {
+              return(
+                <li key={leg.name} className={`p-4 border-2 border-(--color-secundary) rounded-xl shadow-2xl flex flex-col items-center justify-center text-black lg:w-40 lg:h-40`}> 
+                    <leg.icon className={`text-5xl ${leg.color} lg:text-7xl`}/>
+                    <span className="text-lg font-semibold">{leg.name}</span>
+                </li>
+              )
+            })
+          }
         </ul>
       </div>
     </section>

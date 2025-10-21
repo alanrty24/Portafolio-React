@@ -9,19 +9,14 @@ import Foot from "./Components/Foot";
 function App() {
   return (
     <>
-    <div className="">    
-        <Navbar />
-      <main className="pt-17 grid-rows-4 lg:pt-20 ">
+    <Navbar>     
         <Presentation />
         <Aboutme />
         <Skills />
-        <Myprojects /> 
+        <Myprojects />
         <Contactme />
-      </main>
-      <footer className="p-4 bg-(--color-font-p1) text-white flex flex-col items-center">
-        <Foot />
-      </footer>
-    </div>
+    </Navbar>
+    <Foot />
     </>
   );
 }

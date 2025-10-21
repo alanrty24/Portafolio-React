@@ -1,9 +1,10 @@
 @import "tailwindcss";
+@import 'animate.css';
 
 :root {
   /* * Variables */
   --color-primary: #E9F4FF;
-  --color-secudary: #002A83;
+  --color-secundary: #002A83;
   --color-tertiary: #007BFF;
   --color-black: #000000;
   --color-white: #ffffff;
@@ -11,4 +12,27 @@
 
 body {
   @apply min-w-screen min-h-screen bg-(--color-primary) overflow-x-hidden;
+}
+
+section:not(:first-child) {
+   view-timeline-name: --section;
+   view-timeline-axis: block;
+   transition: all .5s linear; 
+   
+   animation-timeline: --section;
+   animation-name: show;
+   animation-range: entry 25% cover 35%;
+   animation-fill-mode: both;
+}
+
+@keyframes show {
+  from{
+    opacity: 0;
+    scale: 25%;
+  }
+  
+  to{
+    opacity: 1;
+    scale: 100%;
+  }
 }

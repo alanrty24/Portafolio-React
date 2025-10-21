@@ -1,0 +1,104 @@
+<ul className="w-full flex flex-col text-xl gap-4">
+              <li
+                className="flex items-center gap-2 text-white px-4 py-2 rounded-xl transition-all duration-500 hover:bg-(--color-primary) hover:text-(--color-tertiary)"
+                onClick={() => setIsOpen(false)}
+              >
+                <HiHome />
+                <a href="#init" className="w-full">
+                  Inicio
+                </a>
+              </li>
+              <li
+                className="flex items-center gap-2 text-white px-4 py-2 rounded-xl transition-all duration-500 hover:bg-(--color-primary) hover:text-(--color-tertiary)"
+                onClick={() => setIsOpen(false)}
+              >
+                <HiDesktopComputer />
+                <a href="#aboutMe" className="w-full">
+                  About Me
+                </a>
+              </li>
+              <li
+                className="flex items-center gap-2 text-white px-4 py-2 rounded-xl transition-all duration-500 hover:bg-(--color-primary) hover:text-(--color-tertiary)"
+                onClick={() => setIsOpen(false)}
+              >
+                <HiCode />
+                <a href="#mySkill" className="w-full">
+                  My Skills
+                </a>
+              </li>
+              <li
+                className="flex items-center gap-2 text-white px-4 py-2 rounded-xl transition-all duration-500 hover:bg-(--color-primary) hover:text-(--color-tertiary)"
+                onClick={() => setIsOpen(false)}
+              >
+                <HiCube />
+                <a href="#myProjects" className="w-full">
+                  My Projects
+                </a>
+              </li>
+              <li
+                className="flex items-center gap-2 text-white px-4 py-2 rounded-xl transition-all duration-500 hover:bg-(--color-primary) hover:text-(--color-tertiary)"
+                onClick={() => setIsOpen(false)}
+              >
+                <HiChatAlt />
+                <a href="#contactMe" className="w-full">
+                  Contact Me
+                </a>
+              </li>
+            </ul>
+
+            <li className="text-4xl md:text-3xl">
+              <FaInstagram className="text-red-500 trasition duration-500 hover:cursor-pointer hover:transition hover:-translate-y-1" />
+            </li>
+            <li className="text-4xl md:text-3xl trasition duration-500 hover:cursor-pointer hover:transition hover:-translate-y-1">
+              <FaLinkedin className="text-blue-500 trasition duration-500 hover:cursor-pointer hover:transition hover:-translate-y-1" />
+            </li>
+            <li className="text-4xl md:text-3xl trasition duration-500 hover:cursor-pointer hover:transition hover:-translate-y-1">
+              <FaFacebook className="text-blue-500 trasition duration-500 hover:cursor-pointer hover:transition hover:-translate-y-1" />
+            </li>
+            <li className="text-4xl md:text-3xl trasition duration-500 hover:cursor-pointer hover:transition hover:-translate-y-1">
+              <FaWhatsapp className="text-green-500 trasition duration-500 hover:cursor-pointer hover:transition hover:-translate-y-1" />
+            </li>
+            <li className="text-4xl md:text-3xl trasition duration-500 hover:cursor-pointer hover:transition hover:-translate-y-1">
+              <FaGithub className="text-gray-500 trasition duration-500 hover:cursor-pointer hover:transition hover:-translate-y-1" />
+            </li>
+            animate__backInLeft
+
+
+            <li className="flex flex-col items-center gap-2 p-2 trasition duration-500 hover:cursor-pointer hover:transition hover:-translate-y-1 md:">
+            <i className="fa-brands fa-html5 icon text-6xl text-orange-500 md:text-9xl "></i>
+            <h3 className="font-bold text-3xl md:text-2xl">HTML</h3>
+          </li>
+          <li className="flex flex-col items-center gap-2 p-2 trasition duration-500 hover:cursor-pointer hover:transition hover:-translate-y-1 md:">
+            <i className="fa-brands fa-css3-alt icon text-6xl text-purple-600 md:text-9xl "></i>
+            <h3 className="font-bold text-3xl md:text-2xl">CSS</h3>
+          </li>
+          <li className="flex flex-col items-center gap-2 p-2 trasition duration-500 hover:cursor-pointer hover:transition hover:-translate-y-1 md:">
+            <i className="fa-brands fa-js icon text-6xl text-yellow-400 md:text-9xl "></i>
+            <h3 className="font-bold text-3xl md:text-2xl">JAVASCRIPT</h3>
+          </li>
+          <li className="flex flex-col items-center gap-2 p-2 trasition duration-500 hover:cursor-pointer hover:transition hover:-translate-y-1 md:">
+            <i className="fa-brands fa-react icon text-6xl text-blue-500 md:text-9xl "></i>
+            <h3 className="font-bold text-3xl md:text-2xl">REACT</h3>
+          </li>
+          <li className="flex flex-col items-center gap-2 p-2 trasition duration-500 hover:cursor-pointer hover:transition hover:-translate-y-1 md:">
+            <i className="fa-solid fa-code text-6xl text-black md:text-9xl "></i>
+            <h3 className="font-bold text-3xl md:text-2xl">NEXT.JS</h3>
+          </li>
+          <li className="flex flex-col items-center gap-2 p-2 trasition duration-500 hover:cursor-pointer hover:transition hover:-translate-y-1 md:">
+            <i className="fa-brands fa-git-alt icon text-6xl text-orange-600 md:text-9xl "></i>
+            <h3 className="font-bold text-3xl md:text-2xl">GIT</h3>
+          </li>
+          <li className="flex flex-col items-center gap-2 p-2 col-span-2 trasition duration-500 hover:cursor-pointer hover:transition hover:-translate-y-1 lg:col-span-3">
+            <i className="fa-brands fa-github icon text-6xl text-gray-500 md:text-9xl "></i>
+            <h3 className="font-bold  text-3xl md:text-2xl">GITHUB</h3>
+          </li>
+
+
+<div className="flex flex-col gap-2 md:w-1/2">
+            <label htmlFor="" className="md:text-2xl ">First Name</label>
+            <input
+              type="text"
+              placeholder="First Name"
+              className="border-2 border-white p-4 rounded-2xl outline-0 invalid:text-red-500 invalid:border-r-red-500 focus:border-(--color-font-p2) md:text-2xl"
+            />
+          </div>
