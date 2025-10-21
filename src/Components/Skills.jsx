@@ -23,7 +23,7 @@ const Skills = () => {
         My Skills
       </h3>
       <div>
-        <ul className="grid grid-rows-4 grid-cols-2 justify-center py-10 gap-4 text-black md:py-8  lg:flex ">
+        <ul className="grid grid-rows-4 grid-cols-2 justify-center py-10 gap-4 text-black md:py-8 md:flex ">
           {
             lenguajes.map(leg => {
               return(
