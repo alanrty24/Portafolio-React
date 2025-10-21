@@ -48,7 +48,7 @@ const Presentation = () => {
         <div className="w-full flex justify-center items-center lg:justify-end">
           <div className="animation_div h-70 w-70 rounded-[50%] shadow-2xl shadow-blue-600 overflow-hidden md:h-80 md:w-80 ">
             <img
-              src="/public/perfil.png"
+              src="../public/perfil.jpg"
               alt="ImgPerfil"
               className="w-full h-full object-cover"
             />
