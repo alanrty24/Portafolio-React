@@ -21,7 +21,7 @@ const Presentation = () => {
       id="init"
     >
       <div className="mx-auto max-w-7xl lg:flex">
-        <div className="contTitle py-4 flex flex-col gap-2 lg:w-[100%] lg:py-20">
+        <div className="contTitle py-4 flex flex-col gap-2 lg:w-[100%] xl:py-auto">
           <h3 className="text-lg font-bold text-(--color-black) font-mono animate__animated animate__backInLeft animate__fast md:text-xl">
             Alan Ruz
           </h3>
@@ -45,8 +45,8 @@ const Presentation = () => {
             }
           </ul>
         </div>
-        <div className="w-full flex justify-center items-center ">
-          <div className="h-70 w-70 rounded-[50%] shadow-2xl shadow-blue-600 overflow-hidden md:h-80 md:w-80 ">
+        <div className="w-full flex justify-center items-center lg:justify-end">
+          <div className="animation_div h-70 w-70 rounded-[50%] shadow-2xl shadow-blue-600 overflow-hidden md:h-80 md:w-80 ">
             <img
               src="/public/perfil.png"
               alt="ImgPerfil"
