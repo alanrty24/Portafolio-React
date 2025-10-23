@@ -11,7 +11,7 @@
 }
 
 body {
-  @apply min-w-screen min-h-screen bg-(--color-primary) overflow-x-hidden;
+  @apply min-w-screen min-h-screen bg-(--color-primary) box-content overflow-x-hidden;
 }
 
 section:not(:first-child) {

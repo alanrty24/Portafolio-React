@@ -1,3 +1,4 @@
+import "../styles/navbar.css"
 import { useState } from "react";
 import {
   HiArrowLeft,
@@ -21,7 +22,7 @@ const Navbar = ({children}) => {
 
   return (
     <>
-      <div className="min-h-screen bg-(--color-primary)">
+      <div className="min-h-screen relative bg-(--color-primary)">
         {/* Mobile Navbar */}
         <div
           className={`fixed inset-0 z-10 ${isOpen ? "block" : "hidden"}`}
@@ -32,7 +33,7 @@ const Navbar = ({children}) => {
               setIsOpen(false);
             }}
           />
-          <div className="fixed inset-y-0 w-64 bg-(--color-secundary)">
+          <div className="fixed inset-y-0 w-64 bg-(--color-secundary) ">
             <div className="flex items-center justify-between p-4 text-3xl">
               <h3 className="text-(--color-primary) font-bold">Alanrty24</h3>
               <button className="bg-(--color-primary) rounded-lg p-1" >
@@ -86,7 +87,7 @@ const Navbar = ({children}) => {
         {/* Containt */}
         <div className="">
           {/* Header Mobile */}
-          <div className={`fixed z-10 inset-x-0 flex items-center justify-between py-4 px-6 ${isOpen ? "hidden" : "flex"} bg-(--color-primary) md:px-20 border-b-0 shadow-2xl lg:hidden`}>
+          <div className={`header-navbar fixed z-10 inset-x-0 items-center justify-between py-4 px-6 ${isOpen ? "hidden" : "flex"} bg-(--color-primary) md:px-20 border-b-0 shadow-2xl lg:hidden`}>
             <h3 className="text-3xl text-(--color-tertiary) font-bold">Alan<span className="text-(--color-secundary)">rty24</span></h3>
             <div 
             className="flex justify-center items-center p-2 rounded-lg bg-(--color-secundary) text-white"

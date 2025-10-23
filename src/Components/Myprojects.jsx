@@ -5,9 +5,9 @@ const Myprojects = () => {
     {name: "proyecto3", href:""},
   ]
   return (
-    <section className="grid grid-rows-[4rem_minmax(0,1fr)] gap-4 py-6 min-h-screen max-w-7x" id="myProjects">
-      <h3 className="text-center text-4xl text-white text-shadow-md text-shadow-black font-bold md:text-5xl ">My Projects</h3>
-      <div className="grid grid-cols-1 min-h-[50%] gap-4 lg:grid-cols-2">
+    <section className="grid grid-rows-[4rem_minmax(0,1fr)] gap-4 py-6 min-h-[50vh] max-w-7x" id="myProjects">
+      <h3 className="text-center text-3xl text-(--color-tertiary) font-bold ">My <span className="text-(--color-secundary)">Projects</span></h3>
+      <div className="grid grid-cols-1 min-h-[50%] gap-4 lg:grid-cols-3">
         {
           proyectos.map(p => {
             return(

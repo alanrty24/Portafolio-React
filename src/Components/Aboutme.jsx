@@ -2,8 +2,8 @@ const Aboutme = () => {
   return (
     <section className="min-h-auto bg-linear-to-b from-85% from-(--color-font-p2) to-(--color-font-p1) py-4 lg:flex-row" id="aboutMe">
       <div className="flex flex-col gap-2 py-4 lg:w-1/2">
-        <h3 className="text-center text-4xl text-white text-shadow-md text-shadow-black font-bold focus:animate__animated focus:animate__backInDown md:text-5xl">
-          ABOUT ME
+        <h3 className="text-center pb-2 text-3xl text-(--color-tertiary)  font-bold">
+          ABOUT <span className="text-(--color-secundary) ">ME</span>
         </h3>
         <p className="py-2 text-xl/8 text-justify indent-4 font-light text-black md:text-xl/7">
           Hola, soy <span className="font-bold text-black text-shadow-2xs text-shadow-white"> Alan Ruz</span>, un
