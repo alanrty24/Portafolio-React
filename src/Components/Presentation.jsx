@@ -27,7 +27,7 @@ const Presentation = () => {
           <p className="text-4xl font-bold text-shadow-2xs animate__animated animate__fadeInUp animate__delay-1s text-(--color-secundary) md:text-5xl">
             FRONT END WEB DEVELOPER
           </p>
-          <p className="text-(--color-black) animate__animated animate__fadeInUp animate__delay-1s py-4 text-base indent-4 text-left md:text-xl/7 lg:text-xl/7 ">
+          <p className="text-(--color-black) animate__animated animate__fadeInUp animate__delay-1s py-4 text-base indent-4 text-left md:text-base/7 lg:text-lg/7 ">
             Mi objetivo como desarrollador front-end es utilizar mis
             conocimientos para optimizar y escalar cualquier sistema, ofreciendo
             soluciones financieras y productivas. 

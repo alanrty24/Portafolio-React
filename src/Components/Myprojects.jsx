@@ -12,8 +12,8 @@ const Myprojects = () => {
       className="grid grid-rows-[4rem_minmax(0,1fr)] gap-4 py-6 min-h-[50vh] max-w-7x"
       id="myProjects"
     >
-      <h3 className="text-center text-xl text-(--color-tertiary) font-bold ">
-        My <span className="text-(--color-secundary)">Projects</span>
+      <h3 className="text-center text-(--color-tertiary) font-bold text-xl md:text-2xl lg:text-3xl">
+        MY <span className="text-(--color-secundary)">PROJECTS</span>
       </h3>
       <div className="grid grid-cols-1 min-h-[50%] gap-8 md:grid-cols-2 lg:grid-cols-3">
         {proyectos.map((p) => {
@@ -27,15 +27,15 @@ const Myprojects = () => {
               </article>
               <article className="p-4 w-full flex items-center justify-between">
                 <div>
-                  <h3 className="text-lg font-bold font-mono">{p.name}</h3>
+                  <h3 className="font-bold font-mono text-xl md:text-2xl">{p.name}</h3>
                   <time className="text-sm font-light">{p.date}</time>
                 </div>
                 <a className="px-4 transition-all duration-500 hover:cursor-pointer hover:-translate-y-1" href="#">
                   <FaGithub className="text-4xl"/>
                 </a>
               </article>
-              <Button variant="secundary" className={`w-1/2 text-xl font-bold lg:text-base lg:mt-4 `}> 
-                  view
+              <Button variant="secundary" className={`w-1/2 text-lg md:text-xl font-bold lg:mt-4 `}> 
+                  View
               </Button>
             </section>
           );

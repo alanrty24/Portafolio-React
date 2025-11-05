@@ -90,8 +90,8 @@ const Contactme = () => {
       className="min-h-screen w-full py-12 flex flex-col items-center gap-4 md:gap-4 mt-8 "
       id="contactMe"
     >
-      <h3 className="text-xl text-center font-bold  text-(--color-tertiary)">
-        Contact <span className="text-(--color-secundary)">Me</span>
+      <h3 className=" text-center font-bold  text-(--color-tertiary) text-xl md:text-2xl lg:text-3xl">
+        CONTACT <span className="text-(--color-secundary)">ME</span>
       </h3>
       <form
         action=""
@@ -120,7 +120,7 @@ const Contactme = () => {
               >
               </Input>
               {errors[variables[i]] && (
-                <p className="text-red-600 px-2">
+                <p className="text-red-600 px-2 text-base md:text-lg">
                   {errors[variables[i]].message}
                 </p>
               )}
@@ -129,23 +129,23 @@ const Contactme = () => {
         })}
         {/* <input type="submit" className="p-4 bg-blue-500 rounded-2xl text-white" value="send" /> */}
         <div className="flex flex-col gap-2 w-full md:w-full md:col-span-full">
-          <label htmlFor="" className="md:text-xl lg:text-lg">
+          <label htmlFor="" className="text-base md:text-lg">
             Message
           </label>
           <textarea
             name="message"
             id=""
-            className="border-2 border-(--color-secundary) shadow-2xl rounded-2xl min-h-30 px-4 py-2 outline-0 focus:border-(--color-tertari) md:text-xl lg:text-lg"
+            className="border-2 border-(--color-secundary) shadow-2xl rounded-2xl min-h-30 px-4 py-2 outline-0 focus:border-(--color-tertari) text-base md:text-lg"
           ></textarea>
         </div>
         <div className="md:col-span-full flex justify-center items-center w-full">
           <Button
             variant="primary"
-            className={`w-full p-4 md:w-1/2 md:text-xl md:py-4 md:mt-8 lg:col-span-full `}
+            className={`w-full text-lg p-4 md:w-1/2 md:text-xl md:py-4 md:mt-8 lg:col-span-full `}
             type={"submit"}
             ref={form}
           >
-            Send
+            ENVIAR
           </Button>
         </div>
       </form>

@@ -34,9 +34,9 @@ const Navbar = ({children}) => {
             }}
           />
           <div className="fixed inset-y-0 w-64 bg-(--color-secundary) ">
-            <div className="flex items-center justify-between p-4 text-3xl">
-              <h3 className="text-(--color-primary) font-bold">Alanrty24</h3>
-              <button className="bg-(--color-primary) rounded-lg p-1" >
+            <div className="flex items-center justify-between p-4">
+              <h3 className="text-(--color-primary) font-bold text-xl md:text-2xl lg:text-3xl">Alanrty24</h3>
+              <button className="bg-(--color-primary) rounded-lg p-1 text-lg md:text-xl" >
                 <HiArrowLeft className="text-(--color-secundary)" onClick={() => {setIsOpen(false)}}/>
               </button>
             </div>
@@ -46,10 +46,10 @@ const Navbar = ({children}) => {
                   seccions.map(seccion => {
                     return (
                       <li key={seccion.id} 
-                      className="flex items-center gap-2 text-white text-xl px-4 py-2 rounded-xl mb-2 transition-all duration-500 hover:bg-(--color-primary) hover:text-(--color-tertiary)"
+                      className="flex items-center gap-2 text-white text-base px-4 py-2 rounded-xl mb-2 transition-all duration-500 hover:bg-(--color-primary) hover:text-(--color-tertiary) md:text-lg"
                       onClick={() => setIsOpen(false)}
                       >
-                        <seccion.icon />
+                        <seccion.icon className="text-lg md:text-xl"/>
                         <a href={seccion.href} className="w-full">{seccion.id}</a>
                       </li>
                     )
@@ -63,7 +63,7 @@ const Navbar = ({children}) => {
         {/* Desktop Navbar */}
         <div className="hidden backdrop-blur-sm lg:fixed lg:z-10 lg:inset-x-0 lg:min-h-16 lg:bg-(--color-primary) lg:border-b-0 lg:shadow-xl lg:flex lg:items-center lg:justify-between lg:px-30 xl:px-60">
             <div>
-              <h3 className="text-2xl text-(--color-tertiary) font-bold">Alan<span className="text-(--color-secundary)">rty24</span></h3>
+              <h3 className="text-(--color-tertiary) font-bold text-xl md:text-2xl lg:text-3xl">Alan<span className="text-(--color-secundary)">rty24</span></h3>
             </div>
             <nav className="">
               <ul className="flex ">

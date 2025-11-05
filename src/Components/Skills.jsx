@@ -25,8 +25,8 @@ const Skills = () => {
       className="min-h-[70vh] flex flex-col justify-center items-center  py-4 "
       id="mySkill"
     >
-      <h3 className="text-xl text-center font-bold text-(--color-tertiary) text-shadow-2xs mb-12 text-shadow-blue-50  lg:text-3xl">
-        My <span className="text-(--color-secundary)">Skills</span>
+      <h3 className="text-center font-bold text-(--color-tertiary) text-shadow-2xs mb-12 text-shadow-blue-50  text-xl md:text-2xl lg:text-3xl">
+        MY <span className="text-(--color-secundary)">SKILLS</span>
       </h3>
       <section className="slider">
         <div className="absolute inset-x-0 h-46 z-20 -top-2 bg-linear-to-b from-white to-transparent overflow-y-hidden md:hidden"></div>
