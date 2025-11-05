@@ -61,7 +61,7 @@ const Navbar = ({children}) => {
         </div>
 
         {/* Desktop Navbar */}
-        <div className="hidden lg:fixed lg:z-10 lg:inset-x-0 lg:min-h-16 lg:bg-(--color-primary) lg:border-b-0 lg:shadow-xl lg:flex lg:items-center lg:justify-between lg:px-30 xl:px-60">
+        <div className="hidden backdrop-blur-sm lg:fixed lg:z-10 lg:inset-x-0 lg:min-h-16 lg:bg-(--color-primary) lg:border-b-0 lg:shadow-xl lg:flex lg:items-center lg:justify-between lg:px-30 xl:px-60">
             <div>
               <h3 className="text-2xl text-(--color-tertiary) font-bold">Alan<span className="text-(--color-secundary)">rty24</span></h3>
             </div>

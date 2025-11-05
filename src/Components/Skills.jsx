@@ -1,60 +1,51 @@
 import { FaCss3, FaGitAlt, FaGithub, FaHtml5, FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiNextdotjs } from "react-icons/si";
-import "../styles/skills.css"
+import "../styles/skills.css";
 const Skills = () => {
-
   const lenguajes = [
-    {name:"Html",color:"text-orange-500",icon:FaHtml5},
-    {name:"Css",color:"text-violet-500",icon:FaCss3},
-    {name:"Javascript",color:"text-amber-500",icon:IoLogoJavascript},
-    {name:"React",color:"text-blue-500",icon:FaReact},
-    {name:"Next.js",color:"text-black",icon:SiNextdotjs},
-    {name:"Git",color:"text-orange-600",icon:FaGitAlt},
-    {name:"Github",color:"text-gray-500",icon:FaGithub},
-    {name:"Html",color:"text-orange-500",icon:FaHtml5},
-    {name:"Css",color:"text-violet-500",icon:FaCss3},
-    {name:"Javascript",color:"text-amber-500",icon:IoLogoJavascript},
-    {name:"React",color:"text-blue-500",icon:FaReact},
-    {name:"Next.js",color:"text-black",icon:SiNextdotjs},
-    {name:"Git",color:"text-orange-600",icon:FaGitAlt},
-    {name:"Github",color:"text-gray-500",icon:FaGithub},
-  ]
+    { name: "Html", color: "text-orange-500", icon: FaHtml5 },
+    { name: "Css", color: "text-violet-500", icon: FaCss3 },
+    { name: "Javascript", color: "text-amber-500", icon: IoLogoJavascript },
+    { name: "React", color: "text-blue-500", icon: FaReact },
+    { name: "Next.js", color: "text-black", icon: SiNextdotjs },
+    { name: "Git", color: "text-orange-600", icon: FaGitAlt },
+    { name: "Github", color: "text-gray-500", icon: FaGithub },
+    { name: "Html", color: "text-orange-500", icon: FaHtml5 },
+    { name: "Css", color: "text-violet-500", icon: FaCss3 },
+    { name: "Javascript", color: "text-amber-500", icon: IoLogoJavascript },
+    { name: "React", color: "text-blue-500", icon: FaReact },
+    { name: "Next.js", color: "text-black", icon: SiNextdotjs },
+    { name: "Git", color: "text-orange-600", icon: FaGitAlt },
+    { name: "Github", color: "text-gray-500", icon: FaGithub },
+  ];
 
   return (
     <section
-      className="min-h-[70vh] flex flex-col justify-center items-center  overflow-hidden py-4 "
+      className="min-h-[70vh] flex flex-col justify-center items-center  py-4 "
       id="mySkill"
     >
-      <h3 className="text-3xl text-center font-bold text-(--color-tertiary) text-shadow-2xs mb-12 text-shadow-blue-50  lg:text-3xl">
+      <h3 className="text-xl text-center font-bold text-(--color-tertiary) text-shadow-2xs mb-12 text-shadow-blue-50  lg:text-3xl">
         My <span className="text-(--color-secundary)">Skills</span>
       </h3>
-      <div className="slider flex flex-col gap-8">
-        <ul className="slider-track flex gap-4">
-          {
-            lenguajes.map((leg,i) => {
-              return(
-                <li key={i} className={`slide p-2 gap-1 w-30 h-30 border-2 bg-(--color-secundary) border-(--color-secundary) rounded-xl shadow-2xl flex flex-col items-center justify-center text-white lg:w-40 lg:h-40`}> 
-                    <leg.icon className={`text-5xl text-white lg:text-7xl`}/>
-                    <span className="text-lg font-semibold">{leg.name}</span>
-                </li>
-              )
-            })
-          }
-        </ul>
-        <ul className="slider-track-reverse flex gap-4">
-          {
-            lenguajes.map((leg,i) => {
-              return(
-                <li key={i} className={`slide p-2 gap-1 w-30 h-30 border-2 bg-(--color-secundary) border-(--color-secundary) rounded-xl shadow-2xl flex flex-col items-center justify-center text-white lg:w-40 lg:h-40`}> 
-                    <leg.icon className={`text-5xl text-white lg:text-7xl`}/>
-                    <span className="text-lg font-semibold">{leg.name}</span>
-                </li>
-              )
-            })
-          }
-        </ul>
-      </div>
+      <section className="slider">
+        <div className="absolute inset-x-0 h-46 z-20 -top-2 bg-linear-to-b from-white to-transparent overflow-y-hidden md:hidden"></div>
+        <article className="slider-slide">
+          {lenguajes.map((leg, i) => {
+            return (
+              <div key={i} className="slider-item w-40 h-auto">
+                <div className="p-4 w-full flex flex-col justify-center items-center">
+                  <leg.icon className={`text-7xl text-white lg:text-7xl`} />
+                  <span className="text-xl font-semibold text-white">
+                    {leg.name}
+                  </span>
+                </div>
+              </div>
+            );
+          })}
+        </article>
+        <div className="absolute inset-x-0 h-46 z-10 bottom-0 bg-linear-to-t from-white to-transparent overflow-y-hidden md:hidden"></div>
+      </section>
     </section>
   );
 };
