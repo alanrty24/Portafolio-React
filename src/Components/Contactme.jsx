@@ -97,7 +97,7 @@ const Contactme = () => {
         action=""
         ref={form}
         onSubmit={handleSubmit(sendEmail)}
-        className="p-4 w-full shadow-2xl shadow-blue-500 border-0 rounded-2xl flex flex-col items-center gap-4 md:grid md:grid-cols-2 lg:w-1/2"
+        className="p-4 w-full shadow-2xl shadow-blue-500 border-0 rounded-2xl flex flex-col items-center gap-4 md:grid md:grid-cols-2 lg:w-2/3"
       >
         {parameters.map((input, i) => {
           return (
@@ -141,11 +141,11 @@ const Contactme = () => {
         <div className="md:col-span-full flex justify-center items-center w-full">
           <Button
             variant="primary"
-            className={`w-full text-lg p-4 md:w-1/2 md:text-xl md:py-4 md:mt-8 lg:col-span-full `}
+            className={`w-full text-lg p-4 md:w-1/2 md:text-xl md:py-4 md:mt-8 lg:col-span-full lg:px-4 lg:py-2 lg:w-1/3 `}
             type={"submit"}
             ref={form}
           >
-            ENVIAR
+            Enviar
           </Button>
         </div>
       </form>
