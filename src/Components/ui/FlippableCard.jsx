@@ -13,11 +13,12 @@ const FlippableCard = ({ fromContent, backContent, ...props }) => {
       className="cursor-pointer"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      // onClick={setIsActive(true)}
       {...props}
     >
       {/* Contenedor interno */}
       <div
-        className={`h-auto border-2 border-white rounded-2xl p-4 flex justify-center items-center text-white bg-(--color-secundary) transition-all duration-500 ease-in-out  ${
+        className={`h-full w-full cursor-pointer border-2 shadow shadow-slate-600 p-1 rounded-2xl flex justify-center items-center text-white bg-(--color-secundary) transition-all duration-500 ease-in-out  ${
           isActive ? "rotate-y-180" : "rotate-y-0"
         }`}
       >
@@ -32,7 +33,7 @@ const FlippableCard = ({ fromContent, backContent, ...props }) => {
 
         {/* Cara Posterior */}
         <div
-          className={`rotate-y-180 transition-all duration-500 ease-in-out ${
+          className={`rotate-y-180 px-4  transition-all duration-500 ease-in-out ${
             isActive ? "opacity-100" : "opacity-0"
           }`}
         >

@@ -27,7 +27,7 @@ const Navbar = ({ children }) => {
         <div className={`fixed inset-0 z-10 lg:hidden`}>
           <div
             className={`fixed inset-0 bg-(--color-primary) transition-opacity duration-500 ease-in-out ${
-              isOpen ? "opacity-50 -translate-x-full" : "opacity-0 translate-x-0"
+              isOpen ? "opacity-50 translate-x-0 " : "opacity-0"
             }`}
             onClick={() => {
               setIsOpen(false);

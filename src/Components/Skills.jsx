@@ -13,6 +13,13 @@ const Skills = () => {
     { name: "Next.js", color: "text-black", icon: SiNextdotjs },
     { name: "Git", color: "text-orange-600", icon: FaGitAlt },
     { name: "Github", color: "text-gray-500", icon: FaGithub },
+    { name: "Html", color: "text-orange-500", icon: FaHtml5 },
+    { name: "Css", color: "text-violet-500", icon: FaCss3 },
+    { name: "Javascript", color: "text-amber-500", icon: IoLogoJavascript },
+    { name: "React", color: "text-blue-500", icon: FaReact },
+    { name: "Next.js", color: "text-black", icon: SiNextdotjs },
+    { name: "Git", color: "text-orange-600", icon: FaGitAlt },
+    { name: "Github", color: "text-gray-500", icon: FaGithub },
   ];
 
   return (

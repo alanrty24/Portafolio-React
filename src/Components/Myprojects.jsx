@@ -9,7 +9,7 @@ const Myprojects = () => {
   ];
   return (
     <section
-      className="scroll-m-20 grid grid-rows-[4rem_minmax(0,1fr)] gap-4 py-6 min-h-[50vh] max-w-7x"
+      className="scroll-m-20 grid grid-rows-[4rem_minmax(0,1fr)] gap-4 py-6 min-h-auto max-w-7x"
       id="myProjects"
     >
       <h3 className="text-center text-(--color-tertiary) font-bold text-xl md:text-2xl lg:text-3xl">
