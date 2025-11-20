@@ -24,11 +24,11 @@ const Skills = () => {
 
   return (
     <section
-      className="min-h-[50vh] overflow-hidden flex flex-col gap-4 justify-center items-center  py-4"
+      className="min-h-auto overflow-hidden flex flex-col gap-4 justify-center items-center  py-4"
       id="mySkill"
     >
       <h3 className="text-center font-bold text-(--color-tertiary) text-shadow-2xs mb-12 text-shadow-blue-50  text-xl md:text-2xl lg:text-3xl">
-        MY <span className="text-(--color-secundary)">SKILLS</span>
+        MIS <span className="text-(--color-secundary)">HERRAMIENTAS</span>
       </h3>
       <Marquee
         pauseOnHover={true}
@@ -43,7 +43,7 @@ const Skills = () => {
           return (
             <div
               key={i}
-              className="p-4 bg-(--color-secundary) rounded-xl m-4 flex flex-col justify-center items-center cursor-pointer"
+              className="p-4 bg-(--color-secundary) rounded-xl m-4 flex flex-col justify-center items-center cursor-pointer hover:shadow-[0px_0px_20px_#fff] hover:shadow-blue-400"
             >
               <div className="flex items-center justify-center">
                 <leg.icon className={`text-7xl text-white lg:text-7xl`} />

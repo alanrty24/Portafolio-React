@@ -13,7 +13,7 @@ const Myprojects = () => {
       id="myProjects"
     >
       <h3 className="text-center text-(--color-tertiary) font-bold text-xl md:text-2xl lg:text-3xl">
-        MY <span className="text-(--color-secundary)">PROJECTS</span>
+        MIS<span className="text-(--color-secundary)"> PROYECTOS</span>
       </h3>
       <div className="grid grid-cols-1 min-h-[50%] gap-8 md:grid-cols-2">
         {proyectos.map((p) => {

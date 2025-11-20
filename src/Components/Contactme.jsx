@@ -91,7 +91,7 @@ const Contactme = () => {
       id="contactMe"
     >
       <h3 className=" text-center font-bold  text-(--color-tertiary) text-xl md:text-2xl lg:text-3xl">
-        CONTACT <span className="text-(--color-secundary)">ME</span>
+        CONTACTA<span className="text-(--color-secundary)">ME</span>
       </h3>
       <form
         action=""

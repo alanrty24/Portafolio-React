@@ -24,19 +24,18 @@ const Navbar = ({ children }) => {
     <>
       <div className="min-h-screen scroll-m-20 relative bg-(--color-primary)">
         {/* Mobile Navbar */}
-        <div className={`fixed inset-0 z-10 lg:hidden`}>
+        <div className={`fixed inset-0 md:z-0  lg:hidden ${isOpen ? "z-20" : "z-0"}`}>
           <div
             className={`fixed inset-0 bg-(--color-primary) transition-opacity duration-500 ease-in-out ${
-              isOpen ? "opacity-50 translate-x-0 " : "opacity-0"
+              isOpen ? "opacity-50 translate-x-0 " : "opacity-0 -translate-x-full"
             }`}
             onClick={() => {
               setIsOpen(false);
             }}
           />
           <div
-            className={`fixed inset-y-0 w-64 bg-(--color-secundary) transition-transform duration-500 ease-in-out 
+            className={`fixed inset-y-0 w-64 bg-(--color-secundary) transition-all duration-500  
                        ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
-            onFo
           >
             <div className="flex items-center justify-between p-4">
               <h3 className="text-(--color-primary) font-bold text-xl md:text-2xl lg:text-3xl">
@@ -73,7 +72,7 @@ const Navbar = ({ children }) => {
         </div>
 
         {/* Desktop Navbar */}
-        <div className="hidden backdrop-blur-sm lg:fixed lg:z-10 lg:inset-x-0 lg:min-h-16 lg:bg-(--color-primary) lg:border-b-0 lg:shadow-xl lg:flex lg:items-center lg:justify-between lg:px-30 xl:px-60">
+        <div className="hidden backdrop-blur-2xl lg:fixed lg:z-20 lg:inset-x-0 lg:min-h-16 lg:bg-(--color-primary) lg:border-b-0 lg:shadow-xl lg:flex lg:items-center lg:justify-between lg:px-30 xl:px-60">
           <div>
             <h3 className="text-(--color-tertiary) font-bold text-xl md:text-2xl lg:text-3xl">
               Alan<span className="text-(--color-secundary)">rty24</span>

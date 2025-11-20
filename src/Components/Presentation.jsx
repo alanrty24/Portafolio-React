@@ -5,6 +5,7 @@ import {
   FaLinkedin,
   FaWhatsapp,
 } from "react-icons/fa";
+import { IoDocumentTextOutline } from "react-icons/io5";
 const icons = [
   { name: "instagram", color: "text-red-500", icon: FaInstagram },
   { name: "linkedin", color: "text-blue-500", icon: FaLinkedin },
@@ -16,10 +17,10 @@ const icons = [
 const Presentation = () => {
   return (
     <section
-      className="min-h-screen w-full bg-linear-to-b  text-white md:flex md:justify-center md:mt-12 lg:mt-0 lg:mx-auto "
+      className="min-h-screen w-full relative bg-linear-to-b  text-white md:flex md:justify-center md:mt-8 lg:mt-0 lg:mx-auto "
       id="init"
     >
-      <article className="mx-auto max-w-7xl lg:flex lg:justify-center lg:items-center lg:gap-12">
+      <article className="mx-auto max-w-7xl lg:flex lg:justify-center lg:items-center lg:gap-12 lg:mt-8">
         <div className="contTitle py-4 flex flex-col gap-2 lg:w-[50%] xl:py-auto">
           <h3 className="text-lg font-bold text-(--color-black) font-mono animate__animated animate__backInLeft animate__fast md:text-xl">
             Alan Ruz
@@ -32,7 +33,17 @@ const Presentation = () => {
             conocimientos para optimizar y escalar cualquier sistema, ofreciendo
             soluciones financieras y productivas. 
           </p>
-          <div className="relative inset-x-0 w-full flex items-center justify-center h-16">
+          <a 
+          href="../../public/Currículum Vitae Alan Ruz 2025 .pdf"
+          download
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center gap-2 bottom-0 w-full p-4 rounded-2xl font-bold text-xl bg-white text-(--color-secundary) border-2 transition-all duration-500 hover:-translate-y-1  md:w-1/2 md:text-base lg:px-4 lg:py-2"
+          >
+            <IoDocumentTextOutline />
+            Download CV
+          </a>
+          <div className="relative z-10 inset-x-0 w-full flex items-center justify-center h-16">
             <ul className=" flex gap-4 absolute justify-center animate__animated animate__backInLeft p-6">
               {icons.map((icon) => {
                 return (
@@ -58,6 +69,7 @@ const Presentation = () => {
             />
           </div>
         </div>
+          
       </article>
     </section>
   );

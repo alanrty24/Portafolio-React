@@ -7,7 +7,7 @@ const Aboutme = () => {
       backContent: (
         <p className="py-2 text-base/7 indent-4 font-light text-sta md:text-lg/7">
           Hola, soy{" "}
-          <span className="font-bold text-black text-shadow-2xs text-shadow-white">
+          <span className="font-bold text-white">
             Alan Ruz
           </span>
           , un desarrollador front-end que se especializa en optimizar y
@@ -18,7 +18,7 @@ const Aboutme = () => {
           crear soluciones digitales eficientes.
         </p>
       ),
-      position: "md:col-start-1 md:row-start-1 md:col-span-2"
+      position: "lg:col-start-1 lg:row-start-1 lg:col-span-2"
     },
     {
       fromContent: <h3 className="font-mono text-xl">¿Por qué contratarme?</h3>,
@@ -31,7 +31,7 @@ const Aboutme = () => {
           transformar ideas en proyectos funcionales y de alto rendimiento.
         </p>
       ),
-      position: "md:row-span-full"
+      position: "lg:row-span-full"
     },
     {
       fromContent: <h3 className="font-mono text-xl">Contactame...</h3>,
@@ -42,7 +42,7 @@ const Aboutme = () => {
           tecnología, no dudes en contactarme.
         </p>
       ),
-      position: "md:col-span-full"
+      position: "lg:col-span-full"
 
     },
   ];
@@ -53,9 +53,9 @@ const Aboutme = () => {
     >
       <div className="flex flex-col gap-2 py-4 ">
         <h3 className="text-center pb-2 text-(--color-tertiary) text-xl md:text-2xl lg:text-3xl font-bold">
-          ABOUT <span className="text-(--color-secundary) ">ME</span>
+          SOBRE <span className="text-(--color-secundary) ">MI</span>
         </h3>
-        <article className="grid grid-cols-1 gap-4 shadow shadow-slate-400 rounded-2xl p-4 md:grid-cols-3">
+        <article className="grid grid-cols-1 gap-4 shadow shadow-slate-400 rounded-2xl p-4 lg:grid-cols-3">
           {descriptions.map((desc, i) => {
             return (
               <FlippableCard
