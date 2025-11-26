@@ -22,8 +22,8 @@ const Myprojects = () => {
               key={p.name}
               className="flex flex-col items-center justify-center px-4 py-8 shadow-slate-500 border-(--color-secundary)  rounded-2xl shadow-2xl transition-all duration-500 hover:shadow-blue-500 "
             >
-              <article className="p-4 h-48 w-full rounded-xl shadow-slate-500 shadow-2xl animate-pulse bg-(--color-primary)">
-
+              <article className="p-4 h-48 w-full rounded-xl flex items-center justify-center shadow-slate-500 shadow-2xl animate-pulse bg-(--color-primary)">
+                <h3>Desarrollo...</h3>
               </article>
               <article className="p-4 w-full flex items-center justify-between">
                 <div>

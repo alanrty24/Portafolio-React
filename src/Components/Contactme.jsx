@@ -2,11 +2,12 @@ import Button from "./ui/Button";
 import Input from "./ui/Input";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser"
-import { useRef } from "react";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
+import { useAlert } from "../hooks/useAlert";
 
 const Contactme = () => {
   const form = useRef();
+  const { showAlert } = useAlert();
   const variables = ["user_name", "user_lastname", "user_email", "date"];
   const parameters = [
     {
@@ -66,25 +67,37 @@ const Contactme = () => {
     });
   };
 
-  const sendEmail = () => {
+  const sendEmail = async () => {
     // e.preventDefault();
-
-    emailjs
+    
+    await emailjs
       .sendForm('service_xmkok39', 'template_aqkp1v8', form.current, {
         publicKey: 'yJ6oKnvRrJLnjuq3d',
       })
       .then(
         () => {
           console.log('SUCCESS!');
+          showAlert({
+            title:"Correo Enviado",
+            text: "Se ha enviado correctamente tu email"
+          })
         },
         (error) => {
-          console.log('FAILED...', error.text);
+          showAlert({
+            title:"Error",
+            text: `Se ha procesado un error, ${error}`,
+            icon: "error"
+          })
         },
       );
     clearInputs();
     reset();
   };
 
+  useEffect(()=> {
+    console.log(errors);
+    
+  },[errors])
   return (
     <section
       className="min-h-screen w-full py-12 flex flex-col items-center gap-4 md:gap-4 mt-8 "

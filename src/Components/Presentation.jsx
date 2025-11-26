@@ -6,12 +6,17 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import { IoDocumentTextOutline } from "react-icons/io5";
+const numeroWhatsApp = '584241727312';
+const mensaje = 'Hola, estoy interesado 📱';
+// Codificar el mensaje
+const mensajeCodificado = encodeURIComponent(mensaje);
+
 const icons = [
-  { name: "instagram", color: "text-red-500", icon: FaInstagram },
-  { name: "linkedin", color: "text-blue-500", icon: FaLinkedin },
-  { name: "facebook", color: "text-blue-500", icon: FaFacebook },
-  { name: "whatsapp", color: "text-green-500", icon: FaWhatsapp },
-  { name: "github", color: "text-gray-500", icon: FaGithub },
+  { name: "instagram",ref: "https://www.instagram.com/alanrty24/", color: "text-red-500", icon: FaInstagram },
+  { name: "linkedin",ref: "https://www.linkedin.com/in/alan-ruz-850b81200/", color: "text-blue-500", icon: FaLinkedin },
+  { name: "facebook",ref: "https://www.facebook.com/alanyeiker.ruz/", color: "text-blue-500", icon: FaFacebook },
+  { name: "whatsapp",ref: `https://wa.me/${numeroWhatsApp}?text=${mensajeCodificado}`, color: "text-green-500", icon: FaWhatsapp },
+  { name: "github",ref: "https://github.com/alanrty24", color: "text-gray-500", icon: FaGithub },
 ];
 
 const Presentation = () => {
@@ -47,14 +52,16 @@ const Presentation = () => {
             <ul className=" flex gap-4 absolute justify-center animate__animated animate__backInLeft p-6">
               {icons.map((icon) => {
                 return (
-                  <li
+                  <a
+                    href={icon.ref}
+                    target="_blank"
                     key={icon.name}
                     className={`text-4xl p-2 relative md:text-3xl trasition duration-500 hover:cursor-pointer hover:transition hover:text-5xl hover:-translate-y-1`}
                   >
                     <icon.icon
                       className={`${icon.color} transition-all duration-500`}
                     />
-                  </li>
+                  </a>
                 );
               })}
             </ul>
